@@ -1,6 +1,6 @@
 # R-Executor
 
-**其他语言版本: [English](README.md), [中文](README_zh.md).**
+**Other Language Version: [English](README.md), [中文](README_zh.md).**
 
 Author: AFAN (WeChat: afan-life)
 
@@ -38,7 +38,7 @@ R-Executor is a Docker-based R language execution environment that integrates th
 The r-executor image is available on Docker Hub. You can pull it directly using the following command:
 
 ```bash
-docker pull r-executor
+docker pull afanlife/r-executor
 ```
 
 Image URL：https://hub.docker.com/r/afanlife/r-executor
