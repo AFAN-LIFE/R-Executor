@@ -1,0 +1,6 @@
+ggplot2
+dplyr
+tidyverse
+shiny
+rms
+lazyeval
