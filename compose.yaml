@@ -1,6 +1,6 @@
 services:
   app_r_executor:
-    image: r-executor:1.0
+    image: afanlife/r-executor:1.0
     container_name: app_r_executor
     restart: always
     volumes:
