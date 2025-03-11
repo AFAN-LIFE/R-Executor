@@ -1,2 +1,3 @@
 Flask
 rpy2
+pandas

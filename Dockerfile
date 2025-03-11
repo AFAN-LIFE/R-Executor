@@ -38,9 +38,3 @@ RUN Rscript -e 'install.packages(readLines("/app/r_packages.txt"), repos="https:
 
 # Set Flask app Dir
 WORKDIR /app
-
-# Expose the port for Flask
-EXPOSE 5000
-
-# Run the Flask app
-CMD ["python3", "app.py"]
