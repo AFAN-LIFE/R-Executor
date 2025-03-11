@@ -60,8 +60,8 @@ docker build -t r-executor:1.0 .
 镜像导出和加载相关指令：
 
 ```bash
-docker save -o r_executor.tar r_executor
-docker load -i r_executor.tar
+docker save -o r-executor.tar r_executor
+docker load -i r-executor.tar
 ```
 
 ### 容器启动
@@ -71,7 +71,7 @@ docker load -i r_executor.tar
 手动启动：
 
 ```bash
-docker run -it -p 5000:5000 -v .:/app r_executor /bin/bash
+docker run -it -p 5000:5000 -v .:/app afanlife/r-executor /bin/bash
 python app.py
 ```
 

@@ -60,22 +60,22 @@ docker build -t r-executor:1.0 .
 Commands for exporting and loading the image:
 
 ```bash
-docker save -o r_executor.tar r_executor
-docker load -i r_executor.tar
+docker save -o r-executor.tar r_executor
+docker load -i r-executor.tar
 ```
 
 ### Starting the Container
 
 Map all files in the current directory to the `/app` directory inside the container and start the service.
 
-#### Manual Start
+Manual Start
 
 ```bash
-docker run -it -p 5000:5000 -v .:/app r_executor /bin/bash
+docker run -it -p 5000:5000 -v .:/app afanlife/r-executor /bin/bash
 python app.py
 ```
 
-#### Using Docker Compose
+Using Docker Compose
 
 ```bash
 docker compose up
