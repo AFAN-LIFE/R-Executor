@@ -1,3 +1,5 @@
+![](logo.png) 
+
 # R-Executor
 
 **Other Language Version: [English](README.md), [中文](README_zh.md).**
@@ -5,6 +7,8 @@
 Author: AFAN (WeChat: afan-life)
 
 R-Executor is a Docker-based R language execution environment that integrates the R runtime and a Python Flask service. Through HTTP requests, users can send R code to the r-executor container for execution and retrieve the results. This project aims to provide a cross-platform R language invocation solution, simplifying the remote execution of R code and result retrieval.
+
+![](flow.png)
 
 ## Features
 - **Flask Integration**: Embeds a Flask service into the R Docker environment, creating a remotely callable R execution service.
@@ -60,7 +64,7 @@ docker build -t r-executor:1.0 .
 Commands for exporting and loading the image:
 
 ```bash
-docker save -o r-executor.tar r_executor
+docker save -o r-executor.tar r-executor
 docker load -i r-executor.tar
 ```
 
